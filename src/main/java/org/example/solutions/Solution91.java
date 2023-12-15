@@ -1,4 +1,4 @@
-package org.example.slns;
+package org.example.solutions;
 
 class Solution91 {
     public int numDecodings(String s) {

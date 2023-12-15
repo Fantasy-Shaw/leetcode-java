@@ -1,6 +1,4 @@
-package org.example.slns;
-
-import java.util.*;
+package org.example.solutions;
 
 class Solution2697 {
     public String makeSmallestPalindrome(String s) {

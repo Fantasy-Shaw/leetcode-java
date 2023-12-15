@@ -1,4 +1,4 @@
-package org.example.slns;
+package org.example.solutions;
 
 class Solution87 {
     private String s1, s2;

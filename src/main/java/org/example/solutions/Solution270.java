@@ -1,4 +1,4 @@
-package org.example.slns;
+package org.example.solutions;
 
 import org.example.utils.TreeNode;
 
