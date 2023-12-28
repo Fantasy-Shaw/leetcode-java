@@ -35,11 +35,16 @@ public class Solution2572 {
             for (int x = 2; x <= mx; x++) {
                 int mask = sf_to_mask[x], c = cnt[x];
                 if (mask > 0 && c > 0) {
-                    int cm = (m - 1) ^ mask, j = cm;
-                    do {
+//                    int cm = (m - 1) ^ mask, j = cm;
+//                    do {
+//                        f[j | mask] = (f[j | mask] + f[j] * cnt[x]) % mod;
+//                        j = (j - 1) & cm;
+//                    } while (j != cm);
+                    int cm = (m - 1) ^ mask;
+                    for (int j = cm; j > 0; j = (j - 1) & cm) {
                         f[j | mask] = (f[j | mask] + f[j] * cnt[x]) % mod;
-                        j = (j - 1) & cm;
-                    } while (j != cm);
+                    }
+                    f[mask] = (f[mask] + f[0] * cnt[x]) % mod;
                 }
             }
             long ans = 0;
