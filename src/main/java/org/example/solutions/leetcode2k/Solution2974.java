@@ -1,8 +1,8 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode2k;
 
 import java.util.*;
 
-public class c100148 {
+public class Solution2974 {
     class Solution {
         public int[] numberGame(int[] nums) {
             PriorityQueue<Integer> pq = new PriorityQueue<>();

@@ -1,8 +1,8 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode2k;
 
 import java.util.*;
 
-public class c100169 {
+public class Solution2975 {
     class Solution {
         private static final int mod = (int) 1e9 + 7;
 

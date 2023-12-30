@@ -1,4 +1,4 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode2k;
 
 import java.util.*;
 

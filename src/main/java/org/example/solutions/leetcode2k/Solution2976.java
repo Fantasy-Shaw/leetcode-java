@@ -1,8 +1,8 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode2k;
 
 import java.util.*;
 
-public class c100156 {
+public class Solution2976 {
     class Solution {
         private static final long inf = Integer.MAX_VALUE;
 
