@@ -3,11 +3,11 @@ package org.example.templates;
 /**
  * 线段树，维护区间内的累加值
  */
-public class SegNodeForAccumulatedVal {
-    public SegNodeForAccumulatedVal ls, rs;
+public class SegNodeForAccumVal {
+    public SegNodeForAccumVal ls, rs;
     public int max = 0, add = 0;
 
-    public static void update(SegNodeForAccumulatedVal node, int lc, int rc, int l, int r, int v) {
+    public static void update(SegNodeForAccumVal node, int lc, int rc, int l, int r, int v) {
         if (l <= lc && rc <= r) {
             node.add += v;
             node.max += v;
@@ -20,7 +20,7 @@ public class SegNodeForAccumulatedVal {
         pushUp(node);
     }
 
-    public static int query(SegNodeForAccumulatedVal node, int lc, int rc, int l, int r) {
+    public static int query(SegNodeForAccumVal node, int lc, int rc, int l, int r) {
         if (l <= lc && rc <= r) {
             return node.max;
         }
@@ -31,13 +31,13 @@ public class SegNodeForAccumulatedVal {
         return ans;
     }
 
-    private static void pushUp(SegNodeForAccumulatedVal node) {
+    private static void pushUp(SegNodeForAccumVal node) {
         node.max = Math.max(node.ls.max, node.rs.max);
     }
 
-    private static void pushDown(SegNodeForAccumulatedVal node) {
-        if (node.ls == null) node.ls = new SegNodeForAccumulatedVal();
-        if (node.rs == null) node.rs = new SegNodeForAccumulatedVal();
+    private static void pushDown(SegNodeForAccumVal node) {
+        if (node.ls == null) node.ls = new SegNodeForAccumVal();
+        if (node.rs == null) node.rs = new SegNodeForAccumVal();
         int add = node.add;
         node.ls.max += add;
         node.rs.max += add;

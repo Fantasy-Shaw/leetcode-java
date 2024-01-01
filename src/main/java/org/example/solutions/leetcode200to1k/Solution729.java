@@ -1,20 +1,20 @@
 package org.example.solutions.leetcode200to1k;
 
-import org.example.templates.SegNodeForAccumulatedVal;
+import org.example.templates.SegNodeForAccumVal;
 
 
 public class Solution729 {
     class MyCalendar {
-        private SegNodeForAccumulatedVal root;
+        private SegNodeForAccumVal root;
         private static final int mn = 0, mx = (int) 1e9;
 
         public MyCalendar() {
-            root = new SegNodeForAccumulatedVal();
+            root = new SegNodeForAccumVal();
         }
 
         public boolean book(int start, int end) {
-            if (SegNodeForAccumulatedVal.query(root, mn, mx, start, end - 1) >= 1) return false;
-            SegNodeForAccumulatedVal.update(root, mn, mx, start, end - 1, 1);
+            if (SegNodeForAccumVal.query(root, mn, mx, start, end - 1) >= 1) return false;
+            SegNodeForAccumVal.update(root, mn, mx, start, end - 1, 1);
             return true;
         }
     }
