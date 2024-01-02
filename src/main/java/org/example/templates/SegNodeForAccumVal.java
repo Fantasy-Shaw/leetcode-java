@@ -1,7 +1,7 @@
 package org.example.templates;
 
 /**
- * 线段树，维护区间内的累加值
+ * 线段树，维护区间内的累加值的最大值
  */
 public class SegNodeForAccumVal {
     public SegNodeForAccumVal ls, rs;
