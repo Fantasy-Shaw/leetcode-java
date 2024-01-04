@@ -1,0 +1,37 @@
+package org.example.solutions.leetcode1kto2k;
+
+import org.example.templates.StringHash;
+
+import java.util.*;
+
+public class Solution1062 {
+    class Solution {
+        private StringHash hash;
+
+        public int longestRepeatingSubstring(String s) {
+            hash = new StringHash(s);
+            String ans = "";
+            int l = 0, r = s.length() - 1;
+            while (l <= r) {
+                int mid = (l + r) >> 1;
+                String t = check(s, mid);
+                if (!t.isEmpty()) l = mid + 1;
+                else r = mid - 1;
+                if (t.length() > ans.length()) ans = t;
+            }
+            return ans.length();
+        }
+
+        private String check(String s, int len) {
+            int n = s.length();
+            Set<Long> set = new HashSet<>();
+            for (int i = 0; i <= n - len; i++) {
+                int j = i + len;
+                long cur = hash.getSubStrHash(i, j + 1);
+                if (set.contains(cur)) return s.substring(i, j + 1);
+                set.add(cur);
+            }
+            return "";
+        }
+    }
+}
