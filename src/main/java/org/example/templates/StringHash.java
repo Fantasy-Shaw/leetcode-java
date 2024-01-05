@@ -20,12 +20,4 @@ public class StringHash {
     public long getSubStrHash(int i, int j) {
         return hash[j] - hash[i] * prime[j - i];
     }
-
-//    public static void main(String[] args) {
-//        String str = "abcdefaaaaabcdef";
-//        StringHash hash = new StringHash(str);
-//        System.out.println(str.length());
-//        System.out.println(hash.getSubStrHash(0, 6));
-//        System.out.println(hash.getSubStrHash(10, 16));
-//    }
 }
