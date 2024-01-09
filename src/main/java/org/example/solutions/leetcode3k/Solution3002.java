@@ -1,8 +1,8 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode3k;
 
 import java.util.*;
 
-public class S100150 {
+public class Solution3002 {
     class Solution {
         public int maximumSetSize(int[] nums1, int[] nums2) {
             Set<Integer> set1 = new HashSet<>(), set2 = new HashSet<>();

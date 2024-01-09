@@ -1,6 +1,6 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode2k;
 
-public class c100166 {
+public class Solution2980 {
     class Solution {
         public boolean hasTrailingZeros(int[] nums) {
             int n = 0;

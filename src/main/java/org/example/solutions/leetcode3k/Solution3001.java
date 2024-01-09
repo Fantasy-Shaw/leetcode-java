@@ -1,8 +1,6 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode3k;
 
-import java.util.*;
-
-public class S100187 {
+public class Solution3001 {
     static class Solution {
         public int minMovesToCaptureTheQueen(int a, int b, int c, int d, int e, int f) {
             // (a,b)-car, (c,d)-elp, (e,f)-queen

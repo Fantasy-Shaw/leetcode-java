@@ -1,8 +1,6 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
-public class Solution100170 {
+public class Solution3000 {
     class Solution {
         public int areaOfMaxDiagonal(int[][] dimensions) {
             int curMx = dimensions[0][0] * dimensions[0][0] + dimensions[0][1] * dimensions[0][1];

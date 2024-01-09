@@ -1,8 +1,8 @@
-package org.example.solutions.contest;
+package org.example.solutions.leetcode2k;
 
 import java.util.*;
 
-public class Solution100185 {
+public class Solution2981And2982 {
     class Solution {
         public int maximumLength(String s) {
             char[] cs = s.toCharArray();
