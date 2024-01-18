@@ -2,6 +2,12 @@ package org.example.solutions.leetcode200to1k;
 
 public class Solution494 {
     class Solution {
+        /**
+         * 添加+的元素和为p
+         * 添加-的元素和为sum-p
+         * ans = p - (sum - p) = target
+         * ==> p = (sum + target) / 2 ==> 0-1 Package
+         */
         public int findTargetSumWays(int[] nums, int target) {
             int sum = target;
             for (int x : nums) {
