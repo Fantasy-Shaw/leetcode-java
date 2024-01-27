@@ -3,28 +3,27 @@ package org.example.solutions.leetcode2k;
 import java.util.*;
 
 public class Solution2517 {
-    private class Solution {
+    class Solution {
         public int maximumTastiness(int[] price, int k) {
             Arrays.sort(price);
-            int left = 0, right = price[price.length - 1] - price[0];
-            while (left < right) {
-                int mid = (left + right + 1) / 2;
+            int l = 0, r = price[price.length - 1] - price[0] + 1;
+            while (l < r) {
+                int mid = (l + r) / 2;
                 if (check(price, k, mid)) {
-                    left = mid;
+                    l = mid + 1;
                 } else {
-                    right = mid - 1;
+                    r = mid;
                 }
             }
-            return left;
+            return l - 1;
         }
 
         private boolean check(int[] price, int k, int mid) {
-            int prev = -0x3f3f3f3f;
-            int cnt = 0;
+            int cnt = 1, pre = price[0];
             for (int p : price) {
-                if (p - prev >= mid) {
+                if (p >= pre + mid) {
                     cnt++;
-                    prev = p;
+                    pre = p;
                 }
             }
             return cnt >= k;

@@ -6,7 +6,7 @@ public class StringHash {
     private static final int p = 1313131;
     public final long[] hash, prime;
 
-    public StringHash(String str) {
+    public StringHash(CharSequence str) {
         int n = str.length();
         hash = new long[n + 10];
         prime = new long[n + 10];
