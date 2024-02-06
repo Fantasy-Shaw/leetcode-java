@@ -1,4 +1,4 @@
-package org.example.solutions.leetcode200to1k;
+package org.example.solutions.leetcode2k;
 
 public class Solution2101 {
     class Solution {
