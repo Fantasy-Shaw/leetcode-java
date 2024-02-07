@@ -1,4 +1,4 @@
-package org.example.solutions.leetcode200to1k;
+package org.example.solutions.leetcode1kto2k;
 
 import java.util.*;
 
