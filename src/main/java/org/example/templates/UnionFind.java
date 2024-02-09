@@ -1,6 +1,7 @@
 package org.example.templates;
 
-public class UnionFind {
+public
+class UnionFind {
     private int count;
     private int[] parent;
 

@@ -22,11 +22,10 @@ public class Solution5 {
         public String longestPalindrome(String s) {
             int n = s.length();
             if (n == 0) return "";
-            int l = -1, r = -1, curMxLen = -1;
+            int l = -1, r = -1, curMxLen = 0;
             PalindromeChecker checker = new PalindromeChecker(s);
             for (int i = 0; i < n; i++) {
-                for (int j = i + 1; j <= n; j++) {
-                    if (j - i < curMxLen) continue;
+                for (int j = i + 1 + curMxLen; j <= n; j++) {
                     if (checker.isPalindrome(i, j)) {
                         l = i;
                         r = j;
@@ -34,7 +33,7 @@ public class Solution5 {
                     }
                 }
             }
-            return curMxLen == -1 ? "" : s.substring(l, r);
+            return curMxLen == 0 ? "" : s.substring(l, r);
         }
     }
 }
