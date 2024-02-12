@@ -2,7 +2,8 @@ package org.example.templates;
 
 import java.util.*;
 
-public class StringHash {
+public
+class StringHash {
     private static final int p = 1313131;
     public final long[] hash, prime;
 

@@ -1,5 +1,7 @@
 package org.example.solutions.leetcode200to1k;
 
+import org.example.templates.MultiSet;
+
 import java.util.*;
 
 public class Solution218 {
@@ -23,7 +25,7 @@ public class Solution218 {
                     return a[1] - b[1];
                 }
             });
-            PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);
+            MultiSet<Integer> pq = new MultiSet<>(Collections.reverseOrder());
             int prev = 0;
             pq.add(prev);
             for (int[] p : ps) {
@@ -33,12 +35,9 @@ public class Solution218 {
                 } else {
                     pq.remove(h);
                 }
-                int cur = pq.peek();
+                int cur = pq.peekFirst();
                 if (cur != prev) {
-                    List<Integer> list = new ArrayList<>();
-                    list.add(point);
-                    list.add(cur);
-                    ans.add(list);
+                    ans.add(List.of(point, cur));
                     prev = cur;
                 }
             }

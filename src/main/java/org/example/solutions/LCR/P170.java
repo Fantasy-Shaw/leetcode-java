@@ -1,16 +1,13 @@
-package org.example.solutions.leetcode200to1k;
+package org.example.solutions.LCR;
 
-import java.util.*;
-
-public class Solution912 {
+public class P170 {
     class Solution {
-        public int[] sortArray(int[] nums) {
-            tmp = new int[nums.length];
-            mergeSort(nums, 0, nums.length - 1);
-            return nums;
-        }
-
         int[] tmp;
+
+        public int reversePairs(int[] record) {
+            tmp = new int[record.length];
+            return mergeSort(record, 0, record.length - 1);
+        }
 
         private int mergeSort(int[] record, int l, int r) {
             if (l >= r) {
