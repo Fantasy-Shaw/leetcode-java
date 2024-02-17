@@ -1,6 +1,5 @@
 package org.example.solutions.leetcode1to200;
 
-import java.nio.file.Path;
 import java.util.*;
 
 public class Solution126 {
