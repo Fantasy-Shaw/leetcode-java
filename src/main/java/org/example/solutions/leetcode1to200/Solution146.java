@@ -98,6 +98,7 @@ public class Solution146 {
         private int capacity;
 
         public LRUCache1(int capacity) {
+            // accessOrder = true: LRU; false: FIFO
             super(capacity, 0.75F, true);
             this.capacity = capacity;
         }
