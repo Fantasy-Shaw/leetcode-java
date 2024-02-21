@@ -14,10 +14,11 @@ public class Solution523 {
             Map<Long, Integer> map = new HashMap<>();
             map.put(0L, 0);
             for (int i = 0; i < n; i++) {
-                sum += nums[i];
+                sum += nums[i]; // sum[i+1]=sum[i]+nums[i]
                 sum %= k;
                 if (map.containsKey(sum)) {
-                    if (i - map.get(sum) >= 1) return true;
+                    // current index is i+1
+                    if (i + 1 - map.get(sum) >= 2) return true;
                 } else {
                     map.put(sum, i + 1);
                 }
