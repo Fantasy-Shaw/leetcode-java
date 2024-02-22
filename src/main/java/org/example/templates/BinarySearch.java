@@ -1,6 +1,7 @@
 package org.example.templates;
 
-public class BinarySearch {
+public
+class BinarySearch {
     public static int lowerBound(int[] arr, int target) {
         int l = 0, r = arr.length;
         while (l < r) {
