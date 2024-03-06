@@ -2,6 +2,8 @@ package org.example.solutions.leetcode1to200;
 
 import org.example.templates.StringHash;
 
+import java.util.Objects;
+
 public class Solution5 {
     class PalindromeChecker {
         private final StringHash hash, revHash;
@@ -34,6 +36,47 @@ public class Solution5 {
                 }
             }
             return curMxLen == 0 ? "" : s.substring(l, r);
+        }
+    }
+
+    class Solution1 {
+        char[] cs;
+
+        public String longestPalindrome(String s) {
+            cs = s.toCharArray();
+            int n = s.length();
+            Boolean[][] memo = new Boolean[n][n];
+            int l = 0, r = 0, curMx = 0;
+            for (int i = 0; i < n; i++) {
+                for (int j = i + curMx; j < n; j++) {
+                    if (dfs(i, j, memo)) {
+                        curMx = j - i + 1;
+                        l = i;
+                        r = j;
+                    }
+                }
+            }
+            return s.substring(l, r + 1);
+        }
+
+        private boolean dfs(int i, int j, Boolean[][] memo) {
+            if (i > j) {
+                return true;
+            }
+            if (i == j) {
+                return true;
+            }
+            if (memo[i][j] != null) {
+                return memo[i][j];
+            }
+            if (i + 1 == j) {
+                boolean ans = cs[i] == cs[j];
+                memo[i][j] = ans;
+                return ans;
+            }
+            boolean ans = cs[i] == cs[j] && dfs(i + 1, j - 1, memo);
+            memo[i][j] = ans;
+            return ans;
         }
     }
 }
