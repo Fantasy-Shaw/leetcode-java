@@ -12,7 +12,7 @@ public class Solution1698 {
             Set<Long> set = new HashSet<>();
             for (int i = 0; i < n; i++) {
                 for (int j = i + 1; j < n + 1; j++) {
-                    set.add(hash.getSubStrHash(i, j));
+                    set.add(hash.getHash(i, j));
                 }
             }
             return set.size();

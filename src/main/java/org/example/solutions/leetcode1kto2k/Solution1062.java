@@ -27,7 +27,7 @@ public class Solution1062 {
             Set<Long> set = new HashSet<>();
             for (int i = 0; i <= n - len; i++) {
                 int j = i + len;
-                long cur = hash.getSubStrHash(i, j + 1);
+                long cur = hash.getHash(i, j + 1);
                 if (set.contains(cur)) return s.substring(i, j + 1);
                 set.add(cur);
             }

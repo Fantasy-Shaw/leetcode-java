@@ -12,14 +12,14 @@ public class Solution3006And3008 {
         public List<Integer> beautifulIndices(String s, String a, String b, int k) {
             int ns = s.length(), na = a.length(), nb = b.length();
             hashS = new StringHash(s);
-            hashA = new StringHash(a).getSubStrHash(0, na);
-            hashB = new StringHash(b).getSubStrHash(0, nb);
+            hashA = new StringHash(a).getHash(0, na);
+            hashB = new StringHash(b).getHash(0, nb);
             List<Integer> idxI = new ArrayList<>(), idxJ = new ArrayList<>();
             for (int i = 0, n = ns - na; i <= n; i++) {
-                if (hashS.getSubStrHash(i, i + na) == hashA) idxI.add(i);
+                if (hashS.getHash(i, i + na) == hashA) idxI.add(i);
             }
             for (int j = 0, n = ns - nb; j <= n; j++) {
-                if (hashS.getSubStrHash(j, j + nb) == hashB) idxJ.add(j);
+                if (hashS.getHash(j, j + nb) == hashB) idxJ.add(j);
             }
             List<Integer> ans = new ArrayList<>();
             for (int i : idxI) {

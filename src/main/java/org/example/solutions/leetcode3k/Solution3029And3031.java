@@ -9,7 +9,7 @@ public class Solution3029And3031 {
             StringHash hash = new StringHash(word);
             int ans = 1;
             for (int i = 1; i * k < n; i++) {
-                if (hash.getSubStrHash(i * k, n) == hash.getSubStrHash(0, n - i * k)) {
+                if (hash.getHash(i * k, n) == hash.getHash(0, n - i * k)) {
                     break;
                 } else {
                     ans++;

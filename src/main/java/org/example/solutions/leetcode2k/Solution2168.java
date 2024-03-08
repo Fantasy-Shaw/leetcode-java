@@ -27,7 +27,7 @@ public class Solution2168 {
             Set<Long> set = new HashSet<>();
             for (int i = 0; i < n; i++) {
                 for (int j = i + 1; j < n + 1; j++) {
-                    long h = hash.getSubStrHash(i, j);
+                    long h = hash.getHash(i, j);
                     if (set.contains(h)) continue;
                     if (!hasSameNumberOfTimes(i, j)) continue;
                     set.add(h);

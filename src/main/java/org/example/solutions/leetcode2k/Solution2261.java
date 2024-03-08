@@ -32,7 +32,7 @@ public class Solution2261 {
             StringHash hash = new StringHash(numsSeq);
             Set<Long> set = new HashSet<>();
             for (int[] pair : pairs) {
-                set.add(hash.getSubStrHash(pair[0], pair[1]));
+                set.add(hash.getHash(pair[0], pair[1]));
             }
             return set.size();
         }

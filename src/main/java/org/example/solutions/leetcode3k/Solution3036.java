@@ -25,11 +25,11 @@ public class Solution3036 {
             for (int i : pattern) {
                 pt.append(i + 2);
             }
-            long hp = new StringHash(pt).getSubStrHash(0, pt.length());
+            long hp = new StringHash(pt).getHash(0, pt.length());
             int k = pt.length();
             int ans = 0;
             for (int i = 0; i <= n - k; i++) {
-                if (ha.getSubStrHash(i, i + k) == hp) {
+                if (ha.getHash(i, i + k) == hp) {
                     ans++;
                 }
             }

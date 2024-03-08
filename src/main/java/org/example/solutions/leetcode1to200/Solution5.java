@@ -2,8 +2,6 @@ package org.example.solutions.leetcode1to200;
 
 import org.example.templates.StringHash;
 
-import java.util.Objects;
-
 public class Solution5 {
     class PalindromeChecker {
         private final StringHash hash, revHash;
@@ -16,7 +14,7 @@ public class Solution5 {
         }
 
         public boolean isPalindrome(int i, int j) {
-            return hash.getSubStrHash(i, j) == revHash.getSubStrHash(n - j, n - i);
+            return hash.getHash(i, j) == revHash.getHash(n - j, n - i);
         }
     }
 

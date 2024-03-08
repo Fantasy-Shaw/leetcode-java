@@ -1,7 +1,5 @@
 package org.example.templates;
 
-import java.util.*;
-
 public
 class StringHash {
     private static final int p = 1313131;
@@ -18,7 +16,7 @@ class StringHash {
         }
     }
 
-    public long getSubStrHash(int i, int j) {
+    public long getHash(int i, int j) {
         return hash[j] - hash[i] * prime[j - i];
     }
 }

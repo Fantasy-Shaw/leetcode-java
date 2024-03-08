@@ -18,8 +18,8 @@ public class Solution1316 {
                 for (int j = i + 1; j < n; j++) {
                     int len = j - i;
                     if (j + len <= n) {
-                        long h = hash.getSubStrHash(i, j);
-                        if (!vis.get(len).contains(h) && h == hash.getSubStrHash(j, j + len)) {
+                        long h = hash.getHash(i, j);
+                        if (!vis.get(len).contains(h) && h == hash.getHash(j, j + len)) {
                             ans++;
                             vis.get(len).add(h);
                         }
