@@ -7,6 +7,28 @@ import java.util.TreeSet;
 
 
 public class Solution729 {
+    class MyCalendar {
+        TreeSet<int[]> set;
+
+        public MyCalendar() {
+            set = new TreeSet<>(Comparator.comparingInt(a -> a[0]));
+        }
+
+        public boolean book(int start, int end) {
+            if (set.isEmpty()) {
+                set.add(new int[]{start, end});
+                return true;
+            }
+            int[] tmp = new int[]{end, 0};
+            int[] lower = set.lower(tmp); // 小于tmp的最大值
+            if (lower == null || lower[1] <= start) {
+                set.add(new int[]{start, end});
+                return true;
+            }
+            return false;
+        }
+    }
+
     class MyCalendar1 {
         private SegNodeForAccumVal root;
         private static final int mn = 0, mx = (int) 1e9;
@@ -22,26 +44,4 @@ public class Solution729 {
         }
     }
 
-}
-
-class MyCalendar {
-    TreeSet<int[]> set;
-
-    public MyCalendar() {
-        set = new TreeSet<>(Comparator.comparingInt(a -> a[0]));
-    }
-
-    public boolean book(int start, int end) {
-        if (set.isEmpty()) {
-            set.add(new int[]{start, end});
-            return true;
-        }
-        int[] tmp = new int[]{end, 0};
-        int[] lower = set.lower(tmp); // 小于tmp的最大值
-        if (lower == null || lower[1] <= start) {
-            set.add(new int[]{start, end});
-            return true;
-        }
-        return false;
-    }
 }
