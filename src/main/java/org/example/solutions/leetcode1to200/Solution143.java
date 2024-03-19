@@ -1,34 +1,31 @@
 package org.example.solutions.leetcode1to200;
 
-import org.example.utils.TreeNode;
-
 import java.util.*;
+
+import org.example.utils.ListNode;
 
 public class Solution143 {
     class Solution {
-        public List<Integer> postorderTraversal(TreeNode root) {
-            List<Integer> ans = new ArrayList<>();
-            if (root == null) {
-                return ans;
+        public void reorderList(ListNode head) {
+            if (head == null) {
+                return;
             }
-            Deque<TreeNode> st = new ArrayDeque<>();
-            TreeNode prev = null;
-            while (root != null || !st.isEmpty()) {
-                while (root != null) {
-                    st.push(root);
-                    root = root.left;
-                }
-                root = st.pop();
-                if (root.right == null || root.right == prev) {
-                    ans.add(root.val);
-                    prev = root;
-                    root = null;
-                } else {
-                    st.push(root);
-                    root = root.right;
+            Deque<ListNode> deque = new ArrayDeque<>();
+            var t = head.next;
+            while (t != null) {
+                deque.offerLast(t);
+                t = t.next;
+                deque.peekLast().next = null;
+            }
+            t = head;
+            while (!deque.isEmpty()) {
+                t.next = deque.pollLast();
+                t = t.next;
+                if (!deque.isEmpty()) {
+                    t.next = deque.pollFirst();
+                    t = t.next;
                 }
             }
-            return ans;
         }
     }
 }
