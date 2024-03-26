@@ -4,28 +4,29 @@ import java.util.*;
 
 public class Solution131 {
     class Solution {
-        private List<List<String>> result = new ArrayList<>();
-        private List<String> path = new ArrayList<>();
-
         public List<List<String>> partition(String s) {
-            backTrack(s, 0);
-            return result;
+            List<List<String>> ans = new ArrayList<>();
+            List<String> cur = new ArrayList<>();
+            dfs(s, 0, ans, cur);
+            return ans;
         }
 
-        private void backTrack(String s, int l) {
-            if (l == s.length()) {
-                result.add(new ArrayList<>(path));
+        private void dfs(String s, int i, List<List<String>> ans, List<String> cur) {
+            if (i >= s.length()) {
+                ans.add(new ArrayList<>(cur));
             }
-            for (int r = l; r < s.length(); r++) {
-                if (isPalindrome(s, l, r)) {
-                    path.add(s.substring(l, r + 1));
-                    backTrack(s, r + 1);
-                    path.remove(path.size() - 1);
+            for (int j = i + 1; j <= s.length(); j++) {
+                String _s = s.substring(i, j);
+                if (isPalindrome(_s)) {
+                    cur.add(_s);
+                    dfs(s, j, ans, cur);
+                    cur.removeLast();
                 }
             }
         }
 
-        private boolean isPalindrome(String s, int l, int r) {
+        private boolean isPalindrome(String s) {
+            int l = 0, r = s.length() - 1;
             while (l < r) {
                 if (s.charAt(l) != s.charAt(r)) return false;
                 l++;
