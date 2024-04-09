@@ -64,8 +64,7 @@ public class Solution460 {
         }
 
         private void pushFront(int freq, Node node) {
-            freq2Dummy.putIfAbsent(freq, newHead());
-            Node dummy = freq2Dummy.get(freq);
+            Node dummy = freq2Dummy.computeIfAbsent(freq, k -> newHead());
             node.next = dummy.next;
             node.prev = dummy;
             node.next.prev = node;
