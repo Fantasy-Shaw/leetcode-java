@@ -2,6 +2,8 @@ package org.example.solutions.leetcode501to1k;
 
 import org.example.templates.UnionFind;
 
+import java.util.*;
+
 public class Solution839 {
     class Solution {
         public int numSimilarGroups(String[] strs) {
@@ -22,12 +24,16 @@ public class Solution839 {
         private static boolean isSimilar(String s1, String s2) {
             int diff = 0;
             if (s1.length() != s2.length()) return false;
+            int[] cnt = new int[26];
             for (int i = 0; i < s1.length(); i++) {
-                if (s1.charAt(i) != s2.charAt(i)) {
+                char c1 = s1.charAt(i), c2 = s2.charAt(i);
+                if (c1 != c2) {
                     if (++diff > 2) return false;
                 }
+                cnt[c1 - 'a']++;
+                cnt[c2 - 'a']--;
             }
-            return true;
+            return Arrays.stream(cnt).sum() == 0;
         }
     }
 }
