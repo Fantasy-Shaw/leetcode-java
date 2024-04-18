@@ -35,6 +35,9 @@ class MultiSet<T> {
     }
 
     public void remove(T x) {
+        if(!treeMap.containsKey(x)) {
+            return;
+        }
         int freq = treeMap.get(x);
         if (freq == 1) {
             treeMap.remove(x);
@@ -42,6 +45,12 @@ class MultiSet<T> {
             treeMap.put(x, freq - 1);
         }
         sz--;
+    }
+
+    public void removeAll(T x) {
+        int freq = treeMap.getOrDefault(x, 0);
+        treeMap.remove(x);
+        sz -= freq;
     }
 
     public T pollFirst() {
