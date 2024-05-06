@@ -9,7 +9,7 @@ public class Solution3085 {
             Map<Character, Integer> map = new HashMap<>();
             for (int i = 0; i < n; i++) {
                 char ch = word.charAt(i);
-                map.put(ch, map.getOrDefault(ch, 0) + 1);
+                map.merge(ch, 1, Integer::sum);
             }
             List<int[]> list = new ArrayList<>();
             for (var p : map.entrySet()) {
