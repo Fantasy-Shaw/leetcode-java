@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode1to200;
 
-import org.example.templates.StringHash;
+import org.example.templates.RolliingHash.StringHash;
 
 public class Solution5 {
     class PalindromeChecker {

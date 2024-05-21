@@ -1,8 +1,8 @@
 package org.example.solutions.leetcode3k;
 
 import org.example.templates.KMP;
-import org.example.templates.RollingHash;
-import org.example.templates.RollingHashStream;
+import org.example.templates.RolliingHash.RollingHash;
+import org.example.templates.RolliingHash.RollingHashStream;
 
 import java.util.*;
 

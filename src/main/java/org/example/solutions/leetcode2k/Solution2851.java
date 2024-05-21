@@ -2,7 +2,7 @@ package org.example.solutions.leetcode2k;
 
 import java.util.*;
 
-import org.example.templates.DoubleStringHash;
+import org.example.templates.RolliingHash.DoubleStringHash;
 
 public class Solution2851 {
     class Solution {

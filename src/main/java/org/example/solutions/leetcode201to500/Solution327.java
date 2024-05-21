@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode201to500;
 
-import org.example.templates.SegNodeForRangeSum;
+import org.example.templates.SegTree.SegNodeForRangeSum;
 
 public class Solution327 {
     static class Solution {

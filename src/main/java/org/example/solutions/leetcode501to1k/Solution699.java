@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode501to1k;
 
-import org.example.templates.SegNodeForMaxVal;
+import org.example.templates.SegTree.SegNodeForMaxVal;
 
 import java.util.*;
 

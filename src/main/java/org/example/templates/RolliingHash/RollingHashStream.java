@@ -1,4 +1,4 @@
-package org.example.templates;
+package org.example.templates.RolliingHash;
 
 import java.util.*;
 

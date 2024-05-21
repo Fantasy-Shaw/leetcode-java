@@ -1,7 +1,32 @@
 package org.example.solutions.LCR;
 
+import org.example.templates.Fenwick;
+
+import java.util.*;
+
 public class P170 {
     class Solution {
+        public int reversePairs(int[] record) {
+            int n = record.length;
+            TreeSet<Integer> set = new TreeSet<>();
+            Arrays.stream(record).forEach(set::add);
+            Fenwick fenwick = new Fenwick(n);
+            int rank = 1; // fenwick start with idx=1
+            Map<Integer, Integer> num2rnk = new HashMap<>();
+            for (var x : set) {
+                num2rnk.put(x, rank++);
+            }
+            int ans = 0;
+            for (int i = n - 1; i >= 0; i--) {
+                int rnk = num2rnk.get(record[i]);
+                fenwick.add(rnk, 1);
+                ans += fenwick.pre(rnk - 1);
+            }
+            return ans;
+        }
+    }
+
+    class Solution1 {
         int[] tmp;
 
         public int reversePairs(int[] record) {

@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode2k;
 
-import org.example.templates.StringHash;
+import org.example.templates.RolliingHash.StringHash;
 
 public class Solution2223 {
     class Solution {

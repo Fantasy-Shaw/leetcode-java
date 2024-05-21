@@ -1,4 +1,4 @@
-package org.example.templates;
+package org.example.templates.interview;
 
 import org.example.utils.ListNode;
 

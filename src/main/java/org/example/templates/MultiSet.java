@@ -30,27 +30,24 @@ class MultiSet<T> {
     }
 
     public void add(T x) {
-        treeMap.put(x, treeMap.getOrDefault(x, 0) + 1);
+        treeMap.merge(x, 1, Integer::sum);
         sz++;
     }
 
     public void remove(T x) {
-        if(!treeMap.containsKey(x)) {
+        if (!treeMap.containsKey(x)) {
             return;
         }
-        int freq = treeMap.get(x);
-        if (freq == 1) {
+        int freq = treeMap.merge(x, -1, Integer::sum);
+        if (freq == 0) {
             treeMap.remove(x);
-        } else {
-            treeMap.put(x, freq - 1);
         }
         sz--;
     }
 
     public void removeAll(T x) {
-        int freq = treeMap.getOrDefault(x, 0);
+        sz -= treeMap.getOrDefault(x, 0);
         treeMap.remove(x);
-        sz -= freq;
     }
 
     public T pollFirst() {

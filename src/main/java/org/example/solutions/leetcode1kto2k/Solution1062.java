@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode1kto2k;
 
-import org.example.templates.StringHash;
+import org.example.templates.RolliingHash.StringHash;
 
 import java.util.*;
 

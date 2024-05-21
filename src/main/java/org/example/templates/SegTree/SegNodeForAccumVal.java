@@ -1,4 +1,4 @@
-package org.example.templates;
+package org.example.templates.SegTree;
 
 /**
  * 线段树，维护区间内的累加值的最大值

@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode501to1k;
 
-import org.example.templates.SegNodeForAccumVal;
+import org.example.templates.SegTree.SegNodeForAccumVal;
 
 import java.util.Comparator;
 import java.util.TreeSet;
