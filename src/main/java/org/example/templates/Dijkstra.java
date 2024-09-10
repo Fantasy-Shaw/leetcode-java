@@ -28,4 +28,30 @@ class Dijkstra {
         }
         return dist;
     }
+
+    /**
+     * weight = 1
+     */
+    public static int[] getDistance(List<Integer>[] graph, int start) {
+        int n = graph.length;
+        int[] dist = new int[n];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[start] = 0;
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(value -> value[1]));
+        pq.offer(new int[]{start, 0});
+        while (!pq.isEmpty()) {
+            var t = pq.poll();
+            int x = t[0], d = t[1];
+            if (d > dist[x]) {
+                continue;
+            }
+            for (var y : graph[x]) {
+                if (d + 1 < dist[y]) {
+                    dist[y] = d + 1;
+                    pq.offer(new int[]{y, d + 1});
+                }
+            }
+        }
+        return dist;
+    }
 }
