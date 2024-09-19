@@ -5,10 +5,13 @@ class DoubleStringHash {
     private static final int P1 = 131, P2 = 233;
 
     private static final long M1 = 998243783, M2 = 1000000097;
+
     private final long[] hash1, prime1, hash2, prime2;
 
+    private final int n;
+
     public DoubleStringHash(CharSequence str) {
-        int n = str.length();
+        n = str.length();
         hash1 = new long[n + 1];
         hash2 = new long[n + 1];
         prime1 = new long[n + 1];
@@ -34,6 +37,14 @@ class DoubleStringHash {
                 (hash1[j] - hash1[i] * prime1[j - i] % M1 + M1) % M1,
                 (hash2[j] - hash2[i] * prime2[j - i] % M2 + M2) % M2
         };
+    }
+
+    public long getHashcode(int i, int j) {
+        return (((hash1[j] - hash1[i] * prime1[j - i] % M1 + M1) % M1) << 32) | (hash2[j] - hash2[i] * prime2[j - i] % M2 + M2) % M2;
+    }
+
+    public int size() {
+        return n;
     }
 
     private static boolean isPrime(long x) {
