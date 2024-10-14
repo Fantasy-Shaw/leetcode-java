@@ -1,8 +1,8 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
-
 import org.example.utils.TreeNode;
+
+import java.util.*;
 
 public class Solution501 {
     class Solution {

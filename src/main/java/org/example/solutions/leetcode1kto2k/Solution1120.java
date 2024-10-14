@@ -2,7 +2,8 @@ package org.example.solutions.leetcode1kto2k;
 
 import org.example.utils.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 class Solution1120 {

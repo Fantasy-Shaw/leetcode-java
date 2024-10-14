@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
-
 public class Solution1997 {
     class Solution {
         static final int mod = (int) 1e9 + 7;

@@ -1,8 +1,10 @@
 package org.example.solutions.leetcode1to200;
 
-import java.util.*;
-
 import org.example.utils.ListNode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Solution147 {
     class Solution1 {

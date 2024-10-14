@@ -1,6 +1,8 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Solution1538 {
     interface ArrayReader {

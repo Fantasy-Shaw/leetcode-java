@@ -1,6 +1,6 @@
 package org.example.solutions.LCR;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class P103 {
     class Solution {

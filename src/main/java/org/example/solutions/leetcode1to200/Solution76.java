@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1to200;
 
-import java.util.*;
-
 public class Solution76 {
     class Solution {
         public String minWindow(String s, String t) {

@@ -2,7 +2,7 @@ package org.example.solutions.leetcode501to1k;
 
 import org.example.templates.BinarySearch;
 
-import java.util.*;
+import java.util.Random;
 
 public class Solution528 {
     class Solution {

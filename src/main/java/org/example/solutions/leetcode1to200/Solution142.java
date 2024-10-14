@@ -2,8 +2,6 @@ package org.example.solutions.leetcode1to200;
 
 import org.example.utils.ListNode;
 
-import java.util.*;
-
 public class Solution142 {
     private class Solution {
         public ListNode detectCycle(ListNode head) {

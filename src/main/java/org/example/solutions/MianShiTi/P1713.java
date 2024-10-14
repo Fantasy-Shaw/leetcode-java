@@ -2,7 +2,7 @@ package org.example.solutions.MianShiTi;
 
 import org.example.templates.TrieNode;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class P1713 {
     class Solution {

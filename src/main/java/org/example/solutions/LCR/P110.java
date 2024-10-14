@@ -1,6 +1,7 @@
 package org.example.solutions.LCR;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class P110 {
     class Solution {

@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
-
 public class Solution1032 {
     class StreamChecker {
         private TrieNode tr;

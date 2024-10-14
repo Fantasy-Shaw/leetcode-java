@@ -1,8 +1,10 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 import org.example.utils.TreeNode;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class Solution366 {
     private class Solution {

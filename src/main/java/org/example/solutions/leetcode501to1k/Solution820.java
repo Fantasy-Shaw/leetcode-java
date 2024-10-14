@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution820 {
     class Solution {

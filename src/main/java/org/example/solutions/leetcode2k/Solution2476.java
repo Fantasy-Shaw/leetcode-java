@@ -3,7 +3,8 @@ package org.example.solutions.leetcode2k;
 import org.example.templates.BinarySearch;
 import org.example.utils.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution2476 {
     class Solution {

@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
-
 public class Solution1599 {
     class Solution {
         public int minOperationsMaxProfit(int[] customers, int boardingCost, int runningCost) {

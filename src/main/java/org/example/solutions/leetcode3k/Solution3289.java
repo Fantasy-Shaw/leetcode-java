@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode3k;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Solution3289 {

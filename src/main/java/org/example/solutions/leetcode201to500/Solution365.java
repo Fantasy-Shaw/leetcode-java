@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution365 {
     class Solution {
         public boolean canMeasureWater(int c1, int c2, int target) {

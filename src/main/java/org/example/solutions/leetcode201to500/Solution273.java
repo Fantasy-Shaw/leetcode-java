@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution273 {
     private class Solution {
         private static final String[] ones = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven",

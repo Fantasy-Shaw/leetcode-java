@@ -1,7 +1,7 @@
 package org.example.solutions.ACM;
 
 import java.io.*;
-import java.util.*;
+import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) {

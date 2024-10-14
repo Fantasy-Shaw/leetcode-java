@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution474 {
     class Solution {
         public int findMaxForm(String[] strs, int m, int n) {

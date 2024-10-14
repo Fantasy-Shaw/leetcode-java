@@ -1,6 +1,6 @@
 package org.example.solutions.LCP;
 
-import java.util.*;
+import java.util.PriorityQueue;
 
 public class P30 {
     class Solution {

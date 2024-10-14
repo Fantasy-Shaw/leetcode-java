@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1to200;
 
-import java.util.Arrays;
-
 public class Solution26 {
     class Solution {
         public int removeDuplicates(int[] nums) {

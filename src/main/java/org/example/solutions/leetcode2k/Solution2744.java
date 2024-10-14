@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 public class Solution2744 {
     class Solution {
         public int maximumNumberOfStringPairs(String[] words) {

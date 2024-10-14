@@ -2,8 +2,6 @@ package org.example.solutions.leetcode1kto2k;
 
 import org.example.templates.UnionFind;
 
-import java.util.*;
-
 public class Solution1061 {
     class Solution {
         static final int maxN = 1050;

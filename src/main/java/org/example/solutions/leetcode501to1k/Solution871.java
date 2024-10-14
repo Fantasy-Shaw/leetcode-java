@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.PriorityQueue;
 
 public class Solution871 {
     class Solution {

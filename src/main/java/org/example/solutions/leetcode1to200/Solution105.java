@@ -2,7 +2,7 @@ package org.example.solutions.leetcode1to200;
 
 import org.example.utils.TreeNode;
 
-import java.util.*;
+import java.util.HashMap;
 
 public class Solution105 {
     class Solution {

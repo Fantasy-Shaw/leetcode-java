@@ -2,7 +2,8 @@ package org.example.solutions.leetcode201to500;
 
 import org.example.utils.TreeNode;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Solution297 {
     public class Codec {

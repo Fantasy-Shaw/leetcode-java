@@ -2,8 +2,6 @@ package org.example.solutions.LCR;
 
 import org.example.utils.TreeNode;
 
-import java.util.*;
-
 public class P143 {
     class Solution {
         public boolean isSubStructure(TreeNode A, TreeNode B) {

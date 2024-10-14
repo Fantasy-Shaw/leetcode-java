@@ -4,7 +4,8 @@ import org.example.templates.KMP;
 import org.example.templates.RolliingHash.RollingHash;
 import org.example.templates.RolliingHash.RollingHashStream;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution3037 {
     abstract class InfiniteStream {

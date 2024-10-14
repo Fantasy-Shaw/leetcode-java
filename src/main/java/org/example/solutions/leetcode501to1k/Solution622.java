@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode501to1k;
 
-import org.example.solutions.leetcode1to200.Solution146;
-
 public class Solution622 {
     class MyCircularQueue {
         final int maxSize;

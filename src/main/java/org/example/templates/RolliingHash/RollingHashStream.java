@@ -1,6 +1,7 @@
 package org.example.templates.RolliingHash;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public
 class RollingHashStream {

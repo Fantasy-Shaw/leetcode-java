@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 public class Solution2924 {
     class Solution {
         public int findChampion(int n, int[][] edges) {

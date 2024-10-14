@@ -1,6 +1,7 @@
 package org.example.templates;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TrieNode {
     public TrieNode[] children = new TrieNode[26];

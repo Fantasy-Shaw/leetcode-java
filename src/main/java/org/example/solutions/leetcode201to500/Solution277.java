@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution277 {
     class Relation {
         public boolean knows(int a, int b) {

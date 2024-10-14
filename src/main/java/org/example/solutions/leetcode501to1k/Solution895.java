@@ -1,6 +1,9 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution895 {
     class FreqStack {

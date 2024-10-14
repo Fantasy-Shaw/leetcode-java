@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
+import java.util.Random;
 
 public class Solution215 {
     class Solution {

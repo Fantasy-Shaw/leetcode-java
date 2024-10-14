@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.Arrays;
-
 public class Solution556 {
     class Solution {
         public int nextGreaterElement(int n) {

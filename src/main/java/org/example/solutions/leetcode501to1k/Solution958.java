@@ -2,7 +2,10 @@ package org.example.solutions.leetcode501to1k;
 
 import org.example.utils.TreeNode;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
 
 public class Solution958 {
     class Solution {

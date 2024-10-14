@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
 
 public class Solution1206 {
     class Skiplist {

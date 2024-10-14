@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
+import java.util.PriorityQueue;
 
 public class Solution2462 {
     class Solution {

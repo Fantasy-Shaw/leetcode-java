@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
-
 public class Solution926 {
     class Solution {
         public int minFlipsMonoIncr(String s) {

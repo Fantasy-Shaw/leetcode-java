@@ -2,7 +2,7 @@ package org.example.solutions.leetcode501to1k;
 
 import org.example.templates.UnionFind;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class Solution839 {
     class Solution {

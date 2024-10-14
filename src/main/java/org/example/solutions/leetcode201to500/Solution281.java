@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Solution281 {
     public class ZigzagIterator {

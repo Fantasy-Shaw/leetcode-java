@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
-
 public class Solution1094 {
     class Solution {
         public boolean carPooling(int[][] trips, int capacity) { // 差分数组

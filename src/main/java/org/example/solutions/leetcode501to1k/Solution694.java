@@ -1,8 +1,9 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
+import javafx.util.Pair;
 
-import javafx.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution694 {
     class Solution {

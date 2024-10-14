@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution243 {
     class Solution {
         public int shortestDistance(String[] wordsDict, String word1, String word2) {

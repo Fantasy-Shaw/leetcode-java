@@ -1,6 +1,9 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class Solution2671 {
     class FrequencyTracker {

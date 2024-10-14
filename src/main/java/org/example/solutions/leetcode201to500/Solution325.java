@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution325 {
     class Solution {

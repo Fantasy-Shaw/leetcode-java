@@ -2,7 +2,8 @@ package org.example.solutions.leetcode1kto2k;
 
 import org.example.templates.UnionFind;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Solution1135 {
     class Solution {

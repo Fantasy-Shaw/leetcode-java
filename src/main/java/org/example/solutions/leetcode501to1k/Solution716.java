@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
+import java.util.TreeSet;
 
 public class Solution716 {
     class MaxStack {

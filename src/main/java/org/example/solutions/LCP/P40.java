@@ -1,6 +1,6 @@
 package org.example.solutions.LCP;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class P40 {
     class Solution {

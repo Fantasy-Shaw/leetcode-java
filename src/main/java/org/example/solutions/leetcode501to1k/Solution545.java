@@ -1,8 +1,10 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
-
 import org.example.utils.TreeNode;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 public class Solution545 {
     private class Solution {

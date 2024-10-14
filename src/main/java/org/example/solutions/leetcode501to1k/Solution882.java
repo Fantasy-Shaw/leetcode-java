@@ -2,7 +2,8 @@ package org.example.solutions.leetcode501to1k;
 
 import org.example.templates.Dijkstra;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution882 {
     class Solution {

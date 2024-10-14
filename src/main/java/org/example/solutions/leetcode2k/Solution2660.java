@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 public class Solution2660 {
     class Solution {
         public int isWinner(int[] player1, int[] player2) {

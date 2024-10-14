@@ -2,7 +2,8 @@ package org.example.solutions.leetcode3k;
 
 import org.example.templates.RolliingHash.StringHash;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution3006And3008 {
     class Solution {

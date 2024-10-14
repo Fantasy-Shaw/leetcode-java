@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
-
 public class Solution1306 {
     class Solution {
         public boolean canReach(int[] arr, int start) {

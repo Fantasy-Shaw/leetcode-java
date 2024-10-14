@@ -1,6 +1,6 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
+import java.util.HashMap;
 
 public class Solution1166 {
     class FileSystem {

@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 public class Solution2182 {
     class Solution {
         public String repeatLimitedString(String s, int repeatLimit) {

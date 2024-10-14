@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 public class Solution2572 {
     class Solution {
         private static final int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29};

@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Solution2276 {
     private class CountIntervals {

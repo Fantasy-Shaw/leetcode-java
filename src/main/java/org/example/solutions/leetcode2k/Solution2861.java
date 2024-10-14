@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
 
 public class Solution2861 {
     class Solution {

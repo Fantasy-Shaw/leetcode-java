@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode3k;
 
-import java.util.*;
-
 public class Solution3306 {
     static
     class Solution {

@@ -2,7 +2,7 @@ package org.example.solutions.leetcode1to200;
 
 import org.example.utils.ListNode;
 
-import java.util.*;
+import java.util.Objects;
 
 public class Solution83 {
     class Solution {

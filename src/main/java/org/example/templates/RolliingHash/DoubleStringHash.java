@@ -1,5 +1,10 @@
 package org.example.templates.RolliingHash;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
 public
 class DoubleStringHash {
     private static final int P1 = 131, P2 = 233;
@@ -40,7 +45,8 @@ class DoubleStringHash {
     }
 
     public long getHashcode(int i, int j) {
-        return (((hash1[j] - hash1[i] * prime1[j - i] % M1 + M1) % M1) << 32) | (hash2[j] - hash2[i] * prime2[j - i] % M2 + M2) % M2;
+        long[] hash = getHash(i, j);
+        return hash[0] << 32 | hash[1];
     }
 
     public int size() {
@@ -57,10 +63,17 @@ class DoubleStringHash {
     }
 
     public static void main(String[] args) {
+        List<Long> nums = new ArrayList<>();
         for (long i = 998200000; i < 1e9 + 100; i++) {
-            if (isPrime(i)) {
-                System.out.println(i);
-            }
+            nums.add(i);
         }
+        List<Long> prime = new CopyOnWriteArrayList<>();
+        nums.parallelStream().forEach(i -> {
+            if (isPrime(i)) {
+                prime.add(i);
+            }
+        });
+        prime.sort(Comparator.naturalOrder());
+        prime.forEach(i -> System.out.printf("%d\n", i));
     }
 }

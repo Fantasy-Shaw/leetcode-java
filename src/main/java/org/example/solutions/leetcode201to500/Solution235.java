@@ -1,8 +1,9 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 import org.example.utils.TreeNode;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution235 {
     class Solution {

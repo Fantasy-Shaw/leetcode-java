@@ -2,8 +2,6 @@ package org.example.solutions.leetcode201to500;
 
 import org.example.utils.ListNode;
 
-import java.util.*;
-
 public class Solution203 {
     class Solution {
         public ListNode removeElements(ListNode head, int val) {

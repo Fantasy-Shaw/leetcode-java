@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1to200;
 
-import java.util.*;
-
 public class Solution10 {
     class Solution {
         public boolean isMatch(String s, String p) {

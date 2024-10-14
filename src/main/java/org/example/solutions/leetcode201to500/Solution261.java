@@ -2,8 +2,6 @@ package org.example.solutions.leetcode201to500;
 
 import org.example.templates.UnionFind;
 
-import java.util.*;
-
 public class Solution261 {
     class Solution {
         public boolean validTree(int n, int[][] edges) {

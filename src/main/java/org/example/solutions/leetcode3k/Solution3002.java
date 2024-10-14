@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode3k;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution3002 {
     class Solution {

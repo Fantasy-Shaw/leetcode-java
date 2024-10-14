@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
-
 import org.example.utils.TreeNode;
 
 public class Solution1373 {

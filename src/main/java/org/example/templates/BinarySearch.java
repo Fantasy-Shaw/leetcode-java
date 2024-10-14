@@ -1,6 +1,6 @@
 package org.example.templates;
 
-import java.util.*;
+import java.util.List;
 
 public
 class BinarySearch {

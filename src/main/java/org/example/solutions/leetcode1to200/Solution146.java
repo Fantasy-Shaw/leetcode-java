@@ -1,6 +1,8 @@
 package org.example.solutions.leetcode1to200;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Solution146 {
     class LRUCache {

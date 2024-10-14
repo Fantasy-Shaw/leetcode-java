@@ -2,7 +2,7 @@ package org.example.solutions.leetcode2k;
 
 import org.example.templates.BinarySearch;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class Solution2332 {
     class Solution {

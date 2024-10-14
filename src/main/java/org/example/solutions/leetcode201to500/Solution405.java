@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution405 {
     class Solution {
         private static final char[] table = "0123456789abcdef".toCharArray();

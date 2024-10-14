@@ -1,8 +1,8 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 import org.example.templates.RolliingHash.DoubleStringHash;
+
+import java.util.Arrays;
 
 public class Solution2851 {
     class Solution {

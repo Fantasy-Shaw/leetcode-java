@@ -1,8 +1,8 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 import org.example.utils.TreeNode;
+
+import java.util.*;
 
 public class Solution314 {
     private class Pair<_Tp1, _Tp2> {

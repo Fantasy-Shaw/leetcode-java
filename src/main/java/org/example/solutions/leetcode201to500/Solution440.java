@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution440 {
     class Solution {
         public int findKthNumber(int n, int k) {

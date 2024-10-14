@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 public class Solution2772 {
     private class Solution {
         public boolean checkArray(int[] nums, int k) {

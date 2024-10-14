@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
-
 public class Solution1775 {
     class Solution {
         public int minOperations(int[] nums1, int[] nums2) {

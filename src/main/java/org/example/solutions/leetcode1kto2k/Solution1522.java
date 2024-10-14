@@ -1,6 +1,8 @@
 package org.example.solutions.leetcode1kto2k;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
 
 public class Solution1522 {
     class Node {

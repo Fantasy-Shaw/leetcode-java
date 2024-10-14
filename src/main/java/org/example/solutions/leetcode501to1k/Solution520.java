@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode501to1k;
 
-import java.util.*;
-
 public class Solution520 {
     class Solution {
         public boolean detectCapitalUse(String word) {

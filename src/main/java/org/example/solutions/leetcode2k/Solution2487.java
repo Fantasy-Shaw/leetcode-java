@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 import org.example.utils.ListNode;
 
 public class Solution2487 {

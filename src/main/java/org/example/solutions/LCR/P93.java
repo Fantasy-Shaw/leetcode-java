@@ -1,6 +1,7 @@
 package org.example.solutions.LCR;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class P93 {
     class Solution {

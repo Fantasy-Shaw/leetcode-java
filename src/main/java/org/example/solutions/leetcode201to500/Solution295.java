@@ -1,6 +1,7 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.PriorityQueue;
 
 public class Solution295 {
     class MedianFinder { // 对顶堆动态维护中位数

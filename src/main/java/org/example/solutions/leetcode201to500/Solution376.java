@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode201to500;
 
-import java.util.*;
-
 public class Solution376 {
     class Solution {
         public int wiggleMaxLength(int[] nums) {

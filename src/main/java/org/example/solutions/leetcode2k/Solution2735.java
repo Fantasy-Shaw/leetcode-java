@@ -1,7 +1,5 @@
 package org.example.solutions.leetcode2k;
 
-import java.util.*;
-
 public class Solution2735 {
     class Solution {
         public long minCost(int[] nums, int x) {
