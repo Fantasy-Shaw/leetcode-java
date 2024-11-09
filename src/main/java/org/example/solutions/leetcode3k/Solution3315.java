@@ -24,7 +24,6 @@ public class Solution3315 {
                     }
                     ans[i] = cur;
                 }
-
             }
             return ans;
         }
